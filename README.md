@@ -2,15 +2,15 @@
 for NBI laryngoscope image classification
 ## dataset
 dataset<br>
--train<br>
-  -NT<br>
-    -001<br>
-    -002<br>
-    -...<br>
-  -SD<br>
-  -...<br>
--test<br>
-  -...<br>
+>-train<br>
+>>-NT<br>
+>>>-001<br>
+>>>-002<br>
+>>>-...<br>
+>>-SD<br>
+>>-...<br>
+>-test<br>
+>> -...<br>
 ## Training the Model
 * train*.py:training file in different methods.<br>
 * myDatasets.py:Data loading file.<br>
