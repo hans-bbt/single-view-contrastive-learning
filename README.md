@@ -1,10 +1,10 @@
-# single-view-contrastive-learning
+# Single-view-contrastive-learning
 for NBI laryngoscope image classification
 ## Running Environment
 python 3.9.12<br>
 pytorch 1.12.1<br>
 cuda 11.3<br>
-## dataset
+## Dataset
 dataset<br>
 --train<br>
 ----NT<br>
