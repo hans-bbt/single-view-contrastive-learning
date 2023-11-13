@@ -1,26 +1,97 @@
 # Single-view-contrastive-learning
 for NBI laryngoscope image classification
 ## Running Environment
-python 3.9.12<br>
-pytorch 1.12.1<br>
-cuda 11.3<br>
+```
+python 3.9.12
+pytorch 1.12.1
+cuda 11.3
+```
 ## Dataset
-dataset<br>
---train<br>
-----NT<br>
-------001<br>
-------002<br>
-------...<br>
-----SD<br>
-----...<br>
---test<br>
-----...<br>
-## Training the Model
-* train*.py: training file in different methods.<br>
-* myDatasets.py: Data loading file.<br>
-* model_selfcontrast_***: Use *** as backbone's single-view contrastive learning model.<br>
-* loss: The folder of loss function.<br>
-* gradcam: The folder of the lesion location module.<br>
-* store: Training results save folder.<br>
-## Model architecture
-![Model architecture](https://raw.githubusercontent.com/hans-bbt/single-view-contrastive-learning/master/self_contrast_overall.jpg)
+dataset directory tree:
+```
+├─NBI laryngoscopy images dataset
+│  ├─train
+│  │  ├─normal tissues
+│  │  │  │  001
+│  │  │  │  │  xxx.jpg
+│  │  │  │  │  ...
+│  │  │  │  002
+│  │  │  │  ...
+│  │  ├─inflammatory keratosis
+│  │  │  │  001
+│  │  │  │  │  xxx.jpg
+│  │  │  │  │  ...
+│  │  │  │  002
+│  │  │  │  ...
+│  │  ├─mild dysplasia
+│  │  │  │  001
+│  │  │  │  │  xxx.jpg
+│  │  │  │  │  ...
+│  │  │  │  002
+│  │  │  │  ...
+│  │  ├─moderate dysplasia
+│  │  │  │  001
+│  │  │  │  │  xxx.jpg
+│  │  │  │  │  ...
+│  │  │  │  002
+│  │  │  │  ...
+│  │  ├─severe dysplasia
+│  │  │  │  001
+│  │  │  │  │  xxx.jpg
+│  │  │  │  │  ...
+│  │  │  │  002
+│  │  │  │  ...
+│  │  ├─squamous cell carcinoma
+│  │  │  │  001
+│  │  │  │  │  xxx.jpg
+│  │  │  │  │  ...
+│  │  │  │  002
+│  │  │  │  ...
+│  ├─valid
+│  │  ├─normal tissues
+│  │  │  │  001
+│  │  │  │  │  xxx.jpg
+│  │  │  │  │  ...
+│  │  │  │  002
+│  │  │  │  ...
+│  │  ├─inflammatory keratosis
+│  │  │  │  001
+│  │  │  │  │  xxx.jpg
+│  │  │  │  │  ...
+│  │  │  │  002
+│  │  │  │  ...
+│  │  ├─mild dysplasia
+│  │  │  │  001
+│  │  │  │  │  xxx.jpg
+│  │  │  │  │  ...
+│  │  │  │  002
+│  │  │  │  ...
+│  │  ├─moderate dysplasia
+│  │  │  │  001
+│  │  │  │  │  xxx.jpg
+│  │  │  │  │  ...
+│  │  │  │  002
+│  │  │  │  ...
+│  │  ├─severe dysplasia
+│  │  │  │  001
+│  │  │  │  │  xxx.jpg
+│  │  │  │  │  ...
+│  │  │  │  002
+│  │  │  │  ...
+│  │  ├─squamous cell carcinoma
+│  │  │  │  001
+│  │  │  │  │  xxx.jpg
+│  │  │  │  │  ...
+│  │  │  │  002
+│  │  │  │  ...
+```
+
+### Data loading
+```
+myDatasets.py: Data loading file
+```
+
+### Training Model
+```
+train***.py #training with backbone ***
+```
