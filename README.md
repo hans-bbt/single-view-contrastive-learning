@@ -93,5 +93,5 @@ myDatasets.py: Data loading file
 
 ### Training Model
 ```
-train***.py #training with backbone ***
+train***.py #training with different methods
 ```
