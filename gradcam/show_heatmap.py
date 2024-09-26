@@ -219,7 +219,7 @@ target_layers = [model.stage5]
 
 grad_cam = GradCAM(model=model, target_layers=target_layers, use_cuda=True)
 
-for i, (datas) in enumerate(test_loader,):
-    pass
+#for i, (datas) in enumerate(test_loader,):
+#    pass
 # for i, (datas) in enumerate(train_loader,):
 #     pass
