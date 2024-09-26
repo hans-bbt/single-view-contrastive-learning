@@ -50,10 +50,18 @@ loss/loss_selfcontrast1.py
 
 ### HeatMap generation
 ```
-loss/loss_selfcontrast0.py
-loss/loss_selfcontrast1.py
+gradcam/model_repAlexnet.py #repAlexNet网络
+gradcam/show_heatmap.py #展示热力图
+gradcam/train_modelheatmap.py #训练repAlexNet网络
+gradcam/utils_heat_map.py #生成热力图的辅助函数
+gradcam/utils_max1.py #计算生成热力图的热力值最大区域
+gradcam/utils_max2.py #计算生成热力图的热力值最大的两个区域
+gradcam/write_max1.py #将utils_max1.py的结果保存到硬盘
+gradcam/write_max2.py #将utils_max2.py的结果保存到硬盘
 ```
 ## Dataset
+所有数据如下图所示：
+
 dataset directory tree:
 ```
 ├─NBI laryngoscopy images dataset
