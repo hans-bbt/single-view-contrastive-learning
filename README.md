@@ -30,9 +30,9 @@ model_selfcontrast_vgg11.py
 ### Training Model
 Three different training methods. In these three methods, we use different comparison objects. In train0.py, the comparison objects are the maximum heatmap value area and the randomly generated area, and in train1.py, the comparison objects are the maximum heatmap value area and the second largest heatmap value area. train2.py takes two randomly generated regions as input to the loss function.
 ```
-train0.py #training with different methods
-train1.py #training with different methods
-train2.py #training with different methods
+train0.py
+train1.py
+train2.py
 ```
 
 ### Validate trained model
