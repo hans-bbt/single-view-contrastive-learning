@@ -62,7 +62,7 @@ for epoch in range(0,opt.EPOCHS):
         cropped_tensors2 = []
 
         for i,coords in  enumerate(max_regions):
-            #ROI区域
+            #随机生成区域
             top =choice(range(0,int(1080-1080*0.4)))
             left = choice(range(0,int(1080-1080*0.4)))
             bottom = top + crop_size
