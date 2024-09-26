@@ -1,5 +1,5 @@
 # Single-view-contrastive-learning
-for NBI laryngoscope image classification
+We have proposed a deep network model for the diagnosis of NBI laryngoscopy images, and this github project provides the code needed to train and validate the model.
 ## Requirments
 ```
 python 3.9.12
@@ -20,7 +20,7 @@ traceback
 myDatasets.py: Data loading file
 ```
 ### Model implementation
-We have uploaded three self-contrasting models, which differ in that they use different backbone networks, and you can replace the backbone networks in these codes to implement your own self-contrasting model.
+We have uploaded three self-contrasting models, which differ in that they use different backbone networks, and you can replace the backbone networks in these codes to implement your own single-view-contrastive model.
 ```
 model_selfcontrast_alexnet.py
 model_selfcontrast_swin.py
