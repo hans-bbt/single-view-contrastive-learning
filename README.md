@@ -61,7 +61,7 @@ gradcam/write_max2.py #将utils_max2.py的结果保存到硬盘
 ```
 ## Dataset
 所有数据如下图所示：
-
+![Image text](https://github.com/hans-bbt/single-view-contrastive-learning/blob/master/NBI_six_classes.png)
 dataset directory tree:
 ```
 ├─NBI laryngoscopy images dataset
